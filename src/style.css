@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    font-family: "Nunito", sans-serif;
+    font-family: "Jersey 10";
 
 }
 
@@ -11,22 +11,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+
 }
 
 p {
     margin: 0;
 }
 
-.whoami {
+#whoami {
     width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 25px;
+    margin: 0;
+    padding: 0;
     
 }
 
-.whoami button {
+#whoami button {
     margin: 20px;
     width: 160px;
     border-radius: 10px;
@@ -37,11 +43,75 @@ p {
 
 
 
-.whoami button:hover {
+#whoami button:hover {
     backdrop-filter: blur(7px);
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.whoami button:active {
+#whoami button:active {
   transform: translateY(4px);
 }
+
+#whoami-window {
+    position: absolute;
+    width: 540px;
+    height: 250px;
+    background-color: ivory;
+    border-radius: 4px;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+
+
+#whoami-window p {
+    margin-top: 20px;
+    margin: 5px;
+}
+
+#whoami-close {
+    margin: 1px;
+    color: none;
+    background: none;
+    border: none;
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    height: 30px;
+    /* margin-bottom: 6px; */
+}
+
+#passions {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+
+}
+
+#passions button {
+    margin: 20px;
+    width: 160px;
+    border-radius: 10px;
+    color: none;
+    background: none;
+    border: none;
+}
+
+
+#passions button:hover {
+    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#passions button:active {
+  transform: translateY(4px);
+}
+
