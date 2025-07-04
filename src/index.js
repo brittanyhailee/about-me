@@ -4,6 +4,13 @@ function openWindow(window) {
 
    if (div.style.display === "none") {
     div.style.display = "block";
+      // Programmatically focus first button inside window if desired:
+        if (window === "passions-window") {
+            const firstButton = div.querySelector(".title-box1");
+            if (firstButton) {
+                firstButton.focus();
+            }
+        }
     } else {
         div.style.display = "none";
     }
@@ -26,6 +33,9 @@ function dragElement(elmnt) {
 
   function dragMouseDown(e) {
     e = e || window.event;
+      if (e.target.tagName === "BUTTON") {
+        return;
+      }
     e.preventDefault();
     // get the mouse cursor position at startup:
     pos3 = e.clientX;

@@ -97,6 +97,7 @@ p {
 }
 
 #passions-window {
+    overflow: scroll;
     position: absolute;
     width: 540px;
     height: 250px;
@@ -141,10 +142,70 @@ p {
   transform: translateY(4px);
 }
 
-#passions-window {
-
+#passions-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
 }
 
-    <div id="passions-window" style="display: none;">
-      <div class="navbar">
-        <button id="passions-close">
+
+.note-titles {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    padding-right: 4px;
+    height: 100%;
+    border-right: 1px solid rgb(215, 215, 215);
+}
+
+
+.note-1 {
+    padding: 10px 0px 0px 15px;
+    width: 100%;
+}
+
+.title-box1, .title-box2, .title-box3 {
+    width: 90px;
+    height: 50px;
+    background-color: rgb(215, 215, 215);
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    align-self: center;
+    margin: 2px 0 2px 5px;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+}
+
+.note-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.note-1 {
+    width: 100%;
+    margin: 0;
+}
+
+
+.line {
+    width: 80px;
+    height: 0.5px;
+    margin: 0.5px;
+    background-color: rgb(160, 160, 160);
+    align-self: center;
+}
+
+.title-box1:active, .title-box2:active, .title-box3:active {
+  background-color: rgb(168, 167, 167);
+}
+
+.title-box1:focus,
+.title-box2:focus,
+.title-box3:focus{
+  background-color: rgb(168, 167, 167);
+}
