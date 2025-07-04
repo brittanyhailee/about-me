@@ -60,4 +60,6 @@ document.getElementById("passions-btn").addEventListener("click", () => openWind
 
 
 document.getElementById("whoami-close").addEventListener("click", () => closeWindow("whoami-window"));
+document.getElementById("passions-close").addEventListener("click", () => closeWindow("passions-window"));
 dragElement(document.getElementById("whoami-window"));
+dragElement(document.getElementById("passions-window"));

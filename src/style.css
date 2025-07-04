@@ -96,6 +96,32 @@ p {
 
 }
 
+#passions-window {
+    position: absolute;
+    width: 540px;
+    height: 250px;
+    background-color: ivory;
+    border-radius: 4px;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+
+}
+
+
+
+#passions-window p {
+    margin-top: 20px;
+    margin: 5px;
+}
+
+#passions-close {
+    margin: 1px;
+    color: none;
+    background: none;
+    border: none;
+}
+
 #passions button {
     margin: 20px;
     width: 160px;
@@ -115,3 +141,10 @@ p {
   transform: translateY(4px);
 }
 
+#passions-window {
+
+}
+
+    <div id="passions-window" style="display: none;">
+      <div class="navbar">
+        <button id="passions-close">
