@@ -167,7 +167,7 @@ p {
     width: 100%;
 }
 
-.title-box1, .title-box2, .title-box3 {
+#title-box1, #title-box2, #title-box3 {
     width: 90px;
     height: 50px;
     background-color: rgb(215, 215, 215);
@@ -179,6 +179,8 @@ p {
     font-family: "Nunito", sans-serif;
     font-size: 15px;
 }
+
+
 
 .note-container {
     display: flex;
@@ -200,12 +202,11 @@ p {
     align-self: center;
 }
 
-.title-box1:active, .title-box2:active, .title-box3:active {
+#title-box1:active, #title-box2:active, #title-box3:active {
   background-color: rgb(168, 167, 167);
 }
 
-.title-box1:focus,
-.title-box2:focus,
-.title-box3:focus{
+
+#title-box1:focus, #title-box2:focus, #title-box3:focus {
   background-color: rgb(168, 167, 167);
 }

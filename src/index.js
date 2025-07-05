@@ -6,7 +6,7 @@ function openWindow(window) {
     div.style.display = "block";
       // Programmatically focus first button inside window if desired:
         if (window === "passions-window") {
-            const firstButton = div.querySelector(".title-box1");
+            const firstButton = document.getElementById("title-box1");
             if (firstButton) {
                 firstButton.focus();
             }
@@ -65,11 +65,25 @@ function dragElement(elmnt) {
   }
 }
 
+function activeButton(btnId) {
+  let button = document.getElementById(btnId);
+  if (button) {
+    button.focus();
+  }
+
+
+}
 document.getElementById("whoami-btn").addEventListener("click", () => openWindow("whoami-window"));
 document.getElementById("passions-btn").addEventListener("click", () => openWindow("passions-window"));
 
 
 document.getElementById("whoami-close").addEventListener("click", () => closeWindow("whoami-window"));
 document.getElementById("passions-close").addEventListener("click", () => closeWindow("passions-window"));
+
+document.getElementById("title-box1").addEventListener("click", () => activeButton("title-box1"));
+document.getElementById("title-box2").addEventListener("click", () => activeButton("title-box2"));
+document.getElementById("title-box3").addEventListener("click", () => activeButton("title-box3"));
+
+
 dragElement(document.getElementById("whoami-window"));
 dragElement(document.getElementById("passions-window"));
