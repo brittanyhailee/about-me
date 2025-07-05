@@ -162,10 +162,6 @@ p {
 }
 
 
-.note-1 {
-    padding: 10px 0px 0px 15px;
-    width: 100%;
-}
 
 #title-box1, #title-box2, #title-box3 {
     width: 90px;
@@ -178,6 +174,7 @@ p {
     margin: 2px 0 2px 5px;
     font-family: "Nunito", sans-serif;
     font-size: 15px;
+
 }
 
 
@@ -191,6 +188,16 @@ p {
 .note-1 {
     width: 100%;
     margin: 0;
+    padding: 10px 0px 0px 15px;
+    /* background-image: url('./assets/paper.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.note {
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -208,5 +215,11 @@ p {
 
 
 #title-box1:focus, #title-box2:focus, #title-box3:focus {
-  background-color: rgb(168, 167, 167);
+  /* background-color: rgb(211, 190, 190); */
+  background-image: url('./assets/star.png');
+  background-color:whitesmoke;
+  /* background-image: url('./assets/gradient.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
