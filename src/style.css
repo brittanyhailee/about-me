@@ -79,6 +79,7 @@ p {
 
 
 .navbar {
+    position: sticky;
     width: 100%;
     background-color: rgb(204, 204, 204);
     height: 30px;
@@ -100,7 +101,7 @@ p {
     overflow: scroll;
     position: absolute;
     width: 540px;
-    height: 250px;
+    height: 300px;
     background-color: ivory;
     border-radius: 4px;
     text-align: left;
@@ -185,9 +186,8 @@ p {
 }
 
 
-.note-1 {
-    width: 100%;
-    margin: 0;
+#note-1, #note-2, #note-3{
+    width: 95%;
     padding: 10px 0px 0px 15px;
     /* background-image: url('./assets/paper.png'); */
     background-size: cover;
@@ -215,11 +215,77 @@ p {
 
 
 #title-box1:focus, #title-box2:focus, #title-box3:focus {
-  /* background-color: rgb(211, 190, 190); */
-  background-image: url('./assets/star.png');
-  background-color:whitesmoke;
-  /* background-image: url('./assets/gradient.png'); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+    /* background-color: rgb(211, 190, 190); */
+    background-image: url('./assets/star.png');
+    background-color:whitesmoke;
+    /* background-image: url('./assets/gradient.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#interests {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+
+}
+
+#passions-window p {
+    margin-top: 20px;
+    margin: 5px;
+}
+
+#passions-close {
+    margin: 1px;
+    color: none;
+    background: none;
+    border: none;
+}
+
+#passions button {
+    margin: 20px;
+    width: 160px;
+    border-radius: 10px;
+    color: none;
+    background: none;
+    border: none;
+}
+
+#interests-close {
+    margin: 1px;
+    color: none;
+    background: none;
+    border: none;
+}
+
+#interests button {
+    margin: 20px;
+    width: 160px;
+    border-radius: 10px;
+    color: none;
+    background: none;
+    border: none;
+}
+
+
+#interests button:hover {
+    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#interests button:active {
+  transform: translateY(4px);
+}
+
+#interests-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
 }

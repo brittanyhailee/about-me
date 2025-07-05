@@ -36,6 +36,7 @@ function dragElement(elmnt) {
       if (e.target.tagName === "BUTTON") {
         return;
       }
+
     e.preventDefault();
     // get the mouse cursor position at startup:
     pos3 = e.clientX;
@@ -49,6 +50,7 @@ function dragElement(elmnt) {
     e = e || window.event;
     e.preventDefault();
     // calculate the new cursor position:
+
     pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
     pos3 = e.clientX;
@@ -70,9 +72,24 @@ function activeButton(btnId) {
   if (button) {
     button.focus();
   }
-
-
+  if (btnId[btnId.length - 1] == 1) {
+    document.getElementById(currentPassion).style.display = "none";
+    currentPassion = "note-1";
+    document.getElementById(currentPassion).style.display = "block";
+  }
+  if (btnId[btnId.length - 1] == 2) {
+    document.getElementById(currentPassion).style.display = "none";
+    currentPassion = "note-2";
+    document.getElementById(currentPassion).style.display = "block";
+  }
+  if (btnId[btnId.length - 1] == 3) {
+    document.getElementById(currentPassion).style.display = "none";
+    currentPassion = "note-3";
+    document.getElementById(currentPassion).style.display = "block";
+  }
 }
+
+let currentPassion = "note-1";
 document.getElementById("whoami-btn").addEventListener("click", () => openWindow("whoami-window"));
 document.getElementById("passions-btn").addEventListener("click", () => openWindow("passions-window"));
 
