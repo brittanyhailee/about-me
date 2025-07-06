@@ -32,6 +32,11 @@ p {
     
 }
 
+#whoami-content {
+    display: flex;
+    flex-direction: column;
+}
+
 #whoami button {
     margin: 20px;
     width: 160px;
@@ -55,7 +60,7 @@ p {
 #whoami-window {
     position: absolute;
     width: 540px;
-    height: 250px;
+    height: 380px;
     background-color: ivory;
     border-radius: 4px;
     text-align: left;
@@ -63,10 +68,43 @@ p {
     font-size: 18px;
 }
 
+#whoami-content {
+    overflow-y: scroll;
+}
 
-#whoami-window p {
-    margin-top: 20px;
-    margin: 5px;
+#profile-pic {
+    border-radius: 8px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    font-family: "Nunito";
+    align-items: center;
+    width: 100%;
+    align-items: flex-end;
+    /* background-color: rgb(146, 185, 216); */
+    background-image: linear-gradient(rgb(126, 167, 200), rgb(126, 167, 200),ivory);
+
+}
+#header h2,h4 {
+    margin: 0;
+}
+
+#header h4 {
+    margin-bottom: 20px;
+}
+
+#header img {
+     margin: 10px 0px 0px 10px;
+
+}
+
+#footer {
+    height: 200px;
+    width: 100%;
+    /* background-image: linear-gradient(rgb(126, 167, 200), rgb(126, 167, 200),rgb(195, 195, 195)); */
+
 }
 
 #whoami-close {
