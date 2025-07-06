@@ -34,6 +34,7 @@
         <button id="whoami-close">
           <img style="height: 20px; width: 20px;"src="./assets/close.png"/>
         </button>
+        <div>who-am-i</div>
       </div>
       <div style="display: flex;">
           <p style="align-self: center;">my name is brittany (bri-tuh-nee)! i am an incoming 3rd year majoring in computer engineering, and
@@ -50,6 +51,7 @@
         <button id="passions-close">
           <img style="height: 20px; width: 20px;"src="./assets/close.png"/>
         </button>
+        <div>my-passions</div>
       </div>
       <div style="display: flex;" id="passions-container">
           <div class="note-titles">
@@ -57,7 +59,6 @@
               <button id="title-box1">
                 reading
               </button>
- 
             <div class="line"></div>
              <button id="title-box2">
               coding
@@ -70,17 +71,18 @@
           </div>
           <div class="notes">
             <div id="note-1">
-              when i'm not coding, you will find me reading a book (or finding one)
-              <img src="./assets/reading-book.png" style="height: 200px; width: 300px; border-radius: 7px;"/>
+              <div class="message">when i'm not coding, you will find me reading a book (or finding one) 📚</div>
+              <img src="./assets/reading-book.png" style="height: 200px; width: 300px; border-radius: 7px; border-radius: 23px 23px 0px 23px;"/>
 
             </div>
             <div id="note-2" style="display: none;">
-              and when i'm not reading, you will likely find me coding (at least, trying to)
-              <img src="./assets/girloncomputer.png" style="height: 200px; width: 300px; border-radius: 7px;"/>
+              <div class="message">and when i'm not reading, you will likely find me coding (at least, trying to) 🥴</div>
+              <img src="./assets/girloncomputer.png" style="height: 200px; width: 300px; border-radius: 7px; border-radius: 23px 23px 0px 23px;"/>
 
             </div>
-            <div id="note-3" style="display: none;">the rest of the times, you will find me trying out new ways to make matcha!
-              <img src="./assets/drinking.png" style="height: 200px; width: 300px; border-radius: 7px;"/>
+            <div id="note-3" style="display: none;">
+              <div class="message">the rest of the times, you will find me trying out new ways to make matcha! 😋</div>
+              <img src="./assets/drinking.png" style="height: 200px; width: 300px; border-radius: 7px; border-radius: 23px 23px 0px 23px;"/>
             </div>
 
 
@@ -88,6 +90,34 @@
 
 
       </div>
+    </div>
+      <div id="interests-window" style="display: none;">
+        <div class="navbar">
+          <button id="interests-close">
+            <img style="height: 20px; width: 20px;"src="./assets/close.png"/>
+          </button>
+          <div>my-interests</div>
+        </div>
+        <div style="display:flex; flex-direction: column;">
+          <div class="interest-titles">
+            <button id="interest-1">books</button>
+            <button id="interest-2">cooking</button>
+            <button style="margin:0; width: 20px;">+</button>
+          </div>
+          <div id="search-bar">
+            <div id="link"> 
+              <a target="_tab" id="link-1" href="https://www.barnesandnoble.com">my favorite bookstore -- barnes & nobles</a>
+              <a target="_tab" id="link-2" style="display:none;" href="https://tiffycooks.com">my favorite online chef -- tiffy cooks</a>
+            </div>
+          </div>
+          <div id="page-1">
+            <img style="width: 100%; height: 100%;" src="./assets/barnes.png"/>
+          </div>
+          <div id="page-2" style="display:none;">
+            <img style="width: 100%; height: 100%;" src="./assets/tiffy-cooks.png"/>
+          </div>
+
+        </div>
     </div>
    
   </body>

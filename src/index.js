@@ -14,6 +14,12 @@ function openWindow(window) {
     } else {
         div.style.display = "none";
     }
+      if (window === "interests-window") {
+            const firstButton = document.getElementById("interest-1");
+            if (firstButton) {
+                firstButton.focus();
+            }
+        }
 }
 
 function closeWindow(window) {
@@ -25,6 +31,8 @@ function closeWindow(window) {
 
 
 function dragElement(elmnt) {
+
+
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 
     /* otherwise, move the DIV from anywhere inside the DIV:*/
@@ -72,35 +80,64 @@ function activeButton(btnId) {
   if (button) {
     button.focus();
   }
-  if (btnId[btnId.length - 1] == 1) {
+
+  
+   // ======== if-statements handling passion window =======
+  if (btnId == "title-box1") {
     document.getElementById(currentPassion).style.display = "none";
     currentPassion = "note-1";
     document.getElementById(currentPassion).style.display = "block";
   }
-  if (btnId[btnId.length - 1] == 2) {
+  if (btnId == "title-box2") {
     document.getElementById(currentPassion).style.display = "none";
     currentPassion = "note-2";
     document.getElementById(currentPassion).style.display = "block";
   }
-  if (btnId[btnId.length - 1] == 3) {
+  if (btnId == "title-box3") {
     document.getElementById(currentPassion).style.display = "none";
     currentPassion = "note-3";
     document.getElementById(currentPassion).style.display = "block";
   }
+  // ======== if-statements handling interests window =======
+  if  (btnId == "interest-1") {
+  document.getElementById(currentInterest).style.display = "none";
+  currentInterest = "page-1";
+  document.getElementById(currentInterest).style.display = "block";
+  document.getElementById("link-1").style.display = "block";
+  document.getElementById("link-2").style.display = "none";
+
+  }
+  if  (btnId == "interest-2") {
+    document.getElementById(currentInterest).style.display = "none";
+    currentInterest = "page-2";
+    document.getElementById(currentInterest).style.display = "block";
+    document.getElementById("link-1").style.display = "none";
+    document.getElementById("link-2").style.display = "block";
+
+  }
+
 }
 
 let currentPassion = "note-1";
+let currentInterest = "page-1";
+
 document.getElementById("whoami-btn").addEventListener("click", () => openWindow("whoami-window"));
 document.getElementById("passions-btn").addEventListener("click", () => openWindow("passions-window"));
+document.getElementById("interests-btn").addEventListener("click", () => openWindow("interests-window"));
+
 
 
 document.getElementById("whoami-close").addEventListener("click", () => closeWindow("whoami-window"));
 document.getElementById("passions-close").addEventListener("click", () => closeWindow("passions-window"));
+document.getElementById("interests-close").addEventListener("click", () => closeWindow("interests-window"));
 
 document.getElementById("title-box1").addEventListener("click", () => activeButton("title-box1"));
 document.getElementById("title-box2").addEventListener("click", () => activeButton("title-box2"));
 document.getElementById("title-box3").addEventListener("click", () => activeButton("title-box3"));
 
+document.getElementById("interest-1").addEventListener("click", () => activeButton("interest-1"));
+document.getElementById("interest-2").addEventListener("click", () => activeButton("interest-2"));
 
 dragElement(document.getElementById("whoami-window"));
 dragElement(document.getElementById("passions-window"));
+dragElement(document.getElementById("interests-window"));

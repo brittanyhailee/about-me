@@ -79,11 +79,20 @@ p {
 
 
 .navbar {
-    position: sticky;
+    font-family: "Jersey 10";
+    font-size: 25px;
+    display: flex;
     width: 100%;
     background-color: rgb(204, 204, 204);
     height: 30px;
     /* margin-bottom: 6px; */
+    text-align: center;
+}
+
+.navbar div {
+    justify-items: center;
+    width: 200px;
+    margin: auto;
 }
 
 #passions {
@@ -98,10 +107,10 @@ p {
 }
 
 #passions-window {
-    overflow: scroll;
+    /* overflow: scroll; */
     position: absolute;
     width: 540px;
-    height: 300px;
+    height: 350px;
     background-color: ivory;
     border-radius: 4px;
     text-align: left;
@@ -187,12 +196,26 @@ p {
 
 
 #note-1, #note-2, #note-3{
+    display: flex;
+    flex-direction: column;
     width: 95%;
     padding: 10px 0px 0px 15px;
-    /* background-image: url('./assets/paper.png'); */
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
+    margin-left: 90px;
+   
+}
+.message {
+    width: 280px;
+    text-align: left;
+    padding-bottom: 10px;
+    background-color: #218aff;
+    color: white;
+    
+    /* background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%); */
+    border-radius: 23px 23px 0px 23px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px; 
 }
 
 .note {
@@ -236,26 +259,29 @@ p {
 
 }
 
-#passions-window p {
+#interests-window {
+    position: absolute;
+    width: 560px;
+    height: 350px;
+    background-color: ivory;
+    border-radius: 4px;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+}
+
+#interests-window p {
     margin-top: 20px;
     margin: 5px;
 }
 
-#passions-close {
+#interests-close {
     margin: 1px;
     color: none;
     background: none;
     border: none;
 }
 
-#passions button {
-    margin: 20px;
-    width: 160px;
-    border-radius: 10px;
-    color: none;
-    background: none;
-    border: none;
-}
 
 #interests-close {
     margin: 1px;
@@ -288,4 +314,50 @@ p {
     flex-direction: row;
     height: 100%;
     width: 100%;
+}
+
+.interest-titles {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(149, 190, 149);
+}
+
+.interest-titles button {
+    border-radius: 6px 6px 0px 0px;
+    border: 1px solid white;
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(149, 190, 149);
+  
+}
+
+#interest-1:focus, #interest-2:focus {
+    background-color: rgb(100, 133, 100);
+}
+
+#search-bar {
+    background-color: rgb(100, 133, 100);
+    height: 50px;
+}
+
+#link {
+    width: 90%;
+    height: 27px;
+    border-radius: 40px;
+    border: 1px solid white;
+    margin: 10px 0px 0px 10px;
+}
+
+
+#link a {
+    margin: 3px;
+    margin-left: 10px;
+    color: white;
 }
