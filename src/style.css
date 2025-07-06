@@ -452,3 +452,23 @@ p {
 #kwk button:active {
   transform: translateY(4px);
 }
+
+#kwk-window {
+    position: absolute;
+    width: 560px;
+    height: 440px;
+    background-color: ivory;
+    border-radius: 4px;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    background-image: url('./assets/pond.gif');
+}
+
+
+#kwk-close {
+    margin: 1px;
+    color: none;
+    background: none;
+    border: none;
+}

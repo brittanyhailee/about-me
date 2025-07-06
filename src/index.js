@@ -133,12 +133,15 @@ let currentInterestLink = "link-1";
 document.getElementById("whoami-btn").addEventListener("click", () => openWindow("whoami-window"));
 document.getElementById("passions-btn").addEventListener("click", () => openWindow("passions-window"));
 document.getElementById("interests-btn").addEventListener("click", () => openWindow("interests-window"));
+document.getElementById("kwk-btn").addEventListener("click", () => openWindow("kwk-window"));
 
 
 
 document.getElementById("whoami-close").addEventListener("click", () => closeWindow("whoami-window"));
 document.getElementById("passions-close").addEventListener("click", () => closeWindow("passions-window"));
 document.getElementById("interests-close").addEventListener("click", () => closeWindow("interests-window"));
+document.getElementById("kwk-close").addEventListener("click", () => closeWindow("kwk-window"));
+
 
 document.getElementById("title-box1").addEventListener("click", () => activeButton("title-box1"));
 document.getElementById("title-box2").addEventListener("click", () => activeButton("title-box2"));
@@ -151,3 +154,4 @@ document.getElementById("interest-3").addEventListener("click", () => activeButt
 dragElement(document.getElementById("whoami-window"));
 dragElement(document.getElementById("passions-window"));
 dragElement(document.getElementById("interests-window"));
+dragElement(document.getElementById("kwk-window"));
