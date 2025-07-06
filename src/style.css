@@ -84,7 +84,8 @@ p {
     width: 100%;
     align-items: flex-end;
     /* background-color: rgb(146, 185, 216); */
-    background-image: linear-gradient(rgb(126, 167, 200), rgb(126, 167, 200),ivory);
+    /* background-image: linear-gradient(rgb(126, 167, 200), rgb(126, 167, 200),ivory); */
+    background-image: linear-gradient(rgb(250, 131, 150), rgb(249, 150, 167), rgb(248, 193, 202),rgb(255, 237, 217));
 
 }
 #header h2,h4 {
@@ -103,7 +104,17 @@ p {
 #footer {
     height: 200px;
     width: 100%;
-    /* background-image: linear-gradient(rgb(126, 167, 200), rgb(126, 167, 200),rgb(195, 195, 195)); */
+
+    background-color: rgb(255, 237, 217);
+}
+
+#fact-1, #fact-2, #fact-3 {
+    color: rgb(146,146,146);
+}
+
+#fact-1:hover ,#fact-2:hover, #fact-3:hover {
+    background-color: rgb(201, 201, 201);
+    color:white;
 
 }
 
@@ -240,8 +251,9 @@ p {
     flex-direction: column;
     width: 95%;
     padding: 10px 0px 0px 15px;
-    height: 80%;
+    height: 70%;
     margin-left: 90px;
+    margin-top: 40px;
    
 }
 .message {
@@ -262,7 +274,7 @@ p {
     border-radius: 40px;
     border: 1px solid rgb(160, 160, 160);
     color: rgb(160, 160, 160);
-    padding: 4px;
+    padding: 8px;
     margin-left: 8px;
     width: 90%;
 }
@@ -387,7 +399,7 @@ p {
   
 }
 
-#interest-1:focus, #interest-2:focus {
+#interest-1:focus, #interest-2:focus, #interest-3:focus {
     background-color: rgb(100, 133, 100);
 }
 

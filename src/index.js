@@ -103,16 +103,18 @@ function activeButton(btnId) {
   document.getElementById(currentInterest).style.display = "none";
   currentInterest = "page-1";
   document.getElementById(currentInterest).style.display = "block";
-  document.getElementById("link-1").style.display = "block";
-  document.getElementById("link-2").style.display = "none";
+  document.getElementById(currentInterestLink).style.display = "none";
+  currentInterestLink = "link-1";
+  document.getElementById(currentInterestLink).style.display = "block";
 
   }
   if  (btnId == "interest-2") {
     document.getElementById(currentInterest).style.display = "none";
     currentInterest = "page-2";
     document.getElementById(currentInterest).style.display = "block";
-    document.getElementById("link-1").style.display = "none";
-    document.getElementById("link-2").style.display = "block";
+    document.getElementById(currentInterestLink).style.display = "none";
+    currentInterestLink = "link-2";
+    document.getElementById(currentInterestLink).style.display = "block";
 
   }
 
@@ -120,6 +122,7 @@ function activeButton(btnId) {
 
 let currentPassion = "note-1";
 let currentInterest = "page-1";
+let currentInterestLink = "link-1";
 
 document.getElementById("whoami-btn").addEventListener("click", () => openWindow("whoami-window"));
 document.getElementById("passions-btn").addEventListener("click", () => openWindow("passions-window"));
