@@ -107,8 +107,7 @@ function activeButton(btnId) {
   currentInterestLink = "link-1";
   document.getElementById(currentInterestLink).style.display = "block";
 
-  }
-  if  (btnId == "interest-2") {
+  } else if  (btnId == "interest-2") {
     document.getElementById(currentInterest).style.display = "none";
     currentInterest = "page-2";
     document.getElementById(currentInterest).style.display = "block";
@@ -116,6 +115,13 @@ function activeButton(btnId) {
     currentInterestLink = "link-2";
     document.getElementById(currentInterestLink).style.display = "block";
 
+  } else {
+    document.getElementById(currentInterest).style.display = "none";
+    currentInterest = "page-3";
+    document.getElementById(currentInterest).style.display = "block";
+    document.getElementById(currentInterestLink).style.display = "none";
+    currentInterestLink = "link-3";
+    document.getElementById(currentInterestLink).style.display = "block";
   }
 
 }
@@ -140,6 +146,7 @@ document.getElementById("title-box3").addEventListener("click", () => activeButt
 
 document.getElementById("interest-1").addEventListener("click", () => activeButton("interest-1"));
 document.getElementById("interest-2").addEventListener("click", () => activeButton("interest-2"));
+document.getElementById("interest-3").addEventListener("click", () => activeButton("interest-3"));
 
 dragElement(document.getElementById("whoami-window"));
 dragElement(document.getElementById("passions-window"));
