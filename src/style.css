@@ -108,11 +108,11 @@ p {
     background-color: rgb(255, 237, 217);
 }
 
-#fact-1, #fact-2, #fact-3 {
+#fact-1, #fact-2, #fact-3, #fact-4 {
     color: rgb(146,146,146);
 }
 
-#fact-1:hover ,#fact-2:hover, #fact-3:hover {
+#fact-1:hover ,#fact-2:hover, #fact-3:hover, #fact-4:hover {
     background-color: rgb(201, 201, 201);
     color:white;
 
