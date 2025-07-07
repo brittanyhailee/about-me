@@ -463,6 +463,7 @@ p {
     font-family: "Nunito", sans-serif;
     font-size: 18px;
     background-image: url('./assets/pond.gif');
+
 }
 
 
@@ -471,4 +472,29 @@ p {
     color: none;
     background: none;
     border: none;
+}
+
+#kwk-content {
+    font-family: "Jersey 10";
+    font-size: 22px;
+    display: flex;
+    /* backdrop-filter: blur(7px); */
+    /* background-color: rgba(138, 129, 129, 0.2); */
+    background-image: url('./assets/wooden-sign.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 430px;
+    height: 470px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+#kwk-content p {
+    width: 350px;
+    margin-right: 50px;
+    margin-bottom: 30px;
 }
