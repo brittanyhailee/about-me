@@ -7,7 +7,7 @@ html, body {
     display: block;
     height: 100%;
     width: 100%;
-    background-image: url('./assets/image.png');
+    background-image: url('./src/assets/image.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
